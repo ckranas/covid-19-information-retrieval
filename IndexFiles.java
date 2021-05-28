@@ -28,14 +28,9 @@ import org.apache.lucene.store.FSDirectory;
 
 import java.io.File;
 
-/** Index all text files under a directory.
-048 * <p>
-049 * This is a command-line application demonstrating simple Lucene indexing.
-050 * Run it with no command-line arguments for usage information.
-051 */
 public class IndexFiles {
   
-  // 056  /** Index all text files under a directory. */
+  /** Index all text files under a directory. */
   public static void main(String[] args) {
 
     String indexPath = "index";
@@ -109,16 +104,6 @@ public class IndexFiles {
     }
   
     System.exit(0);
-
-    // Analyzer analyzer = new StandardAnalyzer();
-
-    // Directory directory = FSDirectory.open("filtered");
-    // IndexWriterConfig config = new IndexWriterConfig(analyzer);
-    // IndexWriter iwriter = new IndexWriterConfig(directory, config);
-
-
-    // Document doc = new Document();
-
 
   }
 }
